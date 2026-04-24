@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\" && exit 0"
-  },
+  "test": "jest",
+  "test:unit": "jest tests/unit",
+  "test:integration": "jest tests/integration"
+},
   "author": "",
   "license": "ISC"
 }
