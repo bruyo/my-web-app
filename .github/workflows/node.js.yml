@@ -1,5 +1,4 @@
 name: Node.js CI/CD
-
 on:
   push:
     branches: [ main ]
@@ -7,16 +6,11 @@ on:
     branches: [ main ]
 
 jobs:
-  # -------------------------
-  # CI: Build & Test
-  # -------------------------
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
-
+        node-version: [18.x, 20.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
